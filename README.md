@@ -20,10 +20,10 @@ Este é um projeto de uma aplicação de lista de tarefas simples, onde os usuá
 ## Capturas de Tela
 
 ![Captura de Tela 1](screenshots/screenshot1.png)
-*Legenda da captura de tela 1.*
+
 
 ![Captura de Tela 2](screenshots/screenshot2.png)
-*Legenda da captura de tela 2.*
+
 
 ## Como Usar
 
