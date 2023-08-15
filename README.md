@@ -19,10 +19,10 @@ Este é um projeto de uma aplicação de lista de tarefas simples, onde os usuá
 
 ## Capturas de Tela
 
-![Captura de Tela 1](screenshots/screenshot1.png)
+![Captura de Tela 1](assets/PrintSc1.png)
 
 
-![Captura de Tela 2](screenshots/screenshot2.png)
+![Captura de Tela 2](assets/PrintSc2.png)
 
 
 ## Como Usar
