@@ -168,10 +168,8 @@ button i {
 	margin: 10px 0;
 	padding: 10px;
 	transition: 0.3s;
-	height: 60%;
+	height: 47%;
 	overflow-y: auto;
-	border-bottom: 5px solid #00000056;
-	z-index: 1;
 }
 
 .item-list {

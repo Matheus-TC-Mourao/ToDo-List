@@ -9,13 +9,16 @@ const editCancelBtn = document.querySelector('#cancel-edit-btn');
 let editInput = document.querySelector('#edit-input');
 const searchInput = document.querySelector('#search-input');
 const itemList = document.querySelector('.item-list');
+const todoItem = document.querySelector('.todo-item');
 
 let oldInputValue;
 
 // Funções
 
 let saveTodo = (text) => {
-	let newItem = `<div class="item-list">
+	let newItem = `
+	<div id="box-item">
+	<div class="item-list">
 	<div id="item" class="todo-item">${text}</div>
 
 	<button class="check-item">
@@ -27,6 +30,7 @@ let saveTodo = (text) => {
 	<button class="delete-item">
 		<i class="fa-solid fa-trash"></i>
 	</button>
+</div>
 </div>`;
 
 	todoList.innerHTML += newItem;
@@ -48,6 +52,16 @@ const updateTodo = (editInput) => {
 	if (todoTitle.innerText === oldInputValue) {
 		todoTitle.innerText = editInput;
 	}
+};
+
+const searchTodo = (term) => {
+	Array.from(todoList.children)
+		.filter((todo) => !todo.textContent.includes(term))
+		.forEach((todo) => todo.classList.add('hide'));
+
+	Array.from(todoList.children)
+		.filter((todo) => todo.textContent.includes(term))
+		.forEach((todo) => todo.classList.remove('hide'));
 };
 
 // Eventos
@@ -103,4 +117,9 @@ editForm.addEventListener('submit', (e) => {
 		updateTodo(editInputValue);
 	}
 	toggleForms();
+});
+
+searchInput.addEventListener('keyup', () => {
+	const term = searchInput.value.trim().toLowerCase();
+	searchTodo(term);
 });
