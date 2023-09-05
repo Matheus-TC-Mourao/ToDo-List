@@ -24,18 +24,23 @@ body {
 	height: 90%;
 	padding: 20px;
 
-	backdrop-filter: blur(10px);
-	transition: backdrop-filter 0.5s;
+	backdrop-filter: blur(30px);
+	/* transition: ease-out 1s; */
 	border-radius: 20px;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);
 }
 
-.container:hover {
-	backdrop-filter: blur(40px);
-}
+/* .container:hover {
+	backdrop-filter: blur(30px);
+} */
 
 header {
 	text-align: center;
+}
+
+header h1 {
+	text-shadow: 3px 3px 8px #ffffff;
+	font-size: 3.4em;
 }
 
 #todo-form {
